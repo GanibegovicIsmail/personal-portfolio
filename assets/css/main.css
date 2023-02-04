@@ -103,6 +103,25 @@ nav,
 section {
   display: block;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffa60096;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body {
   line-height: 1;
@@ -2533,7 +2552,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: #ff9900;
+  background-color: #ffbc58ce;
 }
 
 input[type="submit"]:active,
@@ -2602,7 +2621,7 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color: #ff9900 !important;
+  background-color: #ffbc58ce !important;
 }
 
 input[type="submit"].disabled,
@@ -2700,7 +2719,7 @@ button:disabled,
 
 .features li:before {
   display: block;
-  color: #00ffcc;
+  color: #ffbc58ce;
   position: absolute;
   left: 1.75em;
   top: 2.75em;
@@ -2940,6 +2959,7 @@ button:disabled,
 .wrapper.style1 header.major h6 {
   border-color: rgb(255, 255, 255);
   opacity: 70%;
+  font-weight: 500;
 }
 
 .wrapper.style1 header.major p {
@@ -2964,7 +2984,7 @@ button:disabled,
 
 .wrapper.style1 select option {
   color: #ffffff;
-  background: #21b2a6;
+  background: #ffbc58ce;
 }
 
 .wrapper.style1 input[type="checkbox"] + label,
@@ -3049,7 +3069,7 @@ button:disabled,
 .wrapper.style1 input[type="button"]:hover,
 .wrapper.style1 button:hover,
 .wrapper.style1 .button:hover {
-  background-color: #ff9900;
+  background-color: #ffbc58ce;
 }
 
 .wrapper.style1 input[type="submit"]:active,
@@ -3580,6 +3600,10 @@ body.is-menu-visible #menu {
   font-weight: 100;
 }
 
+#header h1 a:hover {
+  color: #ffbc58ce;
+}
+
 @media screen and (max-width: 736px) {
   #header h1 a {
     font-size: 0.8em;
@@ -3616,7 +3640,7 @@ body.is-menu-visible #menu {
   text-transform: uppercase;
 }
 #header nav > ul > li > a:hover {
-  color: orange;
+  color: #ffbc58ce;
   text-decoration: none;
 }
 
@@ -3634,6 +3658,9 @@ body.is-menu-visible #menu {
   height: 3.75em;
   vertical-align: top;
   width: 2em;
+}
+#header nav > ul > li > a.menuToggle.background-image :hover {
+  color: #ffbc58ce;
 }
 
 @media screen and (max-width: 736px) {
