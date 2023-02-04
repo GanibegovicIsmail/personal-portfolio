@@ -2783,9 +2783,9 @@ button:disabled,
 }
 
 .spotlight .image {
-  -moz-order: 1;
-  -webkit-order: 1;
-  -ms-order: 1;
+  -moz-order: 2;
+  -webkit-order: 2;
+  -ms-order: 2;
   order: 1;
   border-radius: 0;
   width: 40%;
