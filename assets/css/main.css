@@ -273,6 +273,9 @@ i {
 
 p {
   margin: 0 0 2em 0;
+  font-weight: 100;
+  font-size: medium;
+  opacity: 80%;
 }
 
 h1,
@@ -2918,9 +2921,8 @@ button:disabled,
 }
 
 .wrapper.style1 {
-  background-color: #0e121c;
+  background-color: rgba(29, 36, 42, 0.9);
   color: white;
-  opacity: 90%;
 }
 
 .wrapper.style1 strong,
@@ -3472,7 +3474,7 @@ button:disabled,
   -ms-transition: -ms-transform 0.5s ease;
   transition: transform 0.5s ease;
   -webkit-overflow-scrolling: touch;
-  background: #0e121c;
+  background: rgba(29, 36, 42, 0.9);
   color: #ffffff;
   height: 100%;
   max-width: 80%;
