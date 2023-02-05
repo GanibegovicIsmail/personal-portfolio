@@ -2,6 +2,18 @@
 <html>
   <head>
     <style>
+      @media only screen and (max-width: 767px) {
+        header h2 {
+          font-size: 1em;
+        }
+        header p {
+          font-size: 1.2em;
+        }
+      }
+      .aptusnaslov a {
+        color: white;
+      }
+
       .scrollable-images {
         display: flex;
         overflow-x: scroll;
@@ -13,7 +25,7 @@
         background-color: #f5f5f5;
       }
       ::-webkit-scrollbar-thumb {
-        background: #ffbc58ce;
+        background: rgb(229, 85, 109);
       }
 
       /* Handle on hover */
@@ -55,7 +67,7 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header">
-        <h1><a href="index.html">Aptus</a></h1>
+        <h1 class="aptusnaslov"><a href="index.html">Aptus</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
@@ -76,12 +88,42 @@
           </ul>
         </nav>
       </header>
+
       <!-- Main -->
       <article id="main">
-        <header>
-          <h2>APTUS</h2>
-          <p>Fitness App For Beginners</p>
+        <header
+          style="
+            position: relative;
+            background-image: url(images/aptusbanner.jpg);
+            background-size: cover;
+            scale: 100%;
+          "
+        >
+          <h2 style="text-align: center; color: white">APTUS</h2>
+          <p style="text-align: center; color: white">
+            Fitness App For Beginners
+          </p>
         </header>
+        <!-- 
+        <header style="position: relative; border: none; background-color:rgb(255, 142, 161)">
+          <img
+            src="images/aptusbanner.jpg"
+            style="width: 100%; height: 100%; max-width: 100%; max-height: 100%; border: none;"
+          />
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+            "
+          >
+            <h2 style="margin: 0">APTUS</h2>
+            <p style="margin: 0">Fitness App For Beginners</p>
+          </div>
+        </header>  -->
+
         <section class="wrapper style5">
           <div class="inner">
             <h3>Role & Responsibilities</h3>
@@ -146,8 +188,11 @@
             <h3>Full App:</h3>
             <p>
               You can find the full app created in .NET MAUI on this link:
-              <br />
-              https://github.com/GanibegovicIsmail/Aptus-Fitness-App
+              <a
+                class="link"
+                href="https://github.com/GanibegovicIsmail/Aptus-Fitness-App"
+                >Aptus</a
+              >
             </p>
           </div>
         </section>

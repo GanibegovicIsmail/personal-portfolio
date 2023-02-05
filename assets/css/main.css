@@ -115,7 +115,7 @@ section {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffbc58ce;
+  background: rgb(229, 85, 109);
 }
 
 /* Handle on hover */
@@ -256,7 +256,8 @@ a {
 }
 
 a:hover {
-  border-bottom-color: #ff9900;
+  border-bottom-color: rgb(229, 85, 109);
+  color: rgb(229, 85, 109);
 }
 
 strong,
@@ -301,7 +302,6 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -2559,7 +2559,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: #ffbc58ce;
+  background-color: rgb(229, 85, 109);
 }
 
 input[type="submit"]:active,
@@ -2619,8 +2619,8 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: #ffbc58ce !important;
-  border: 0.5px #ffbc58ce;
+  background-color: rgb(229, 85, 109) !important;
+  border: 0.5px rgb(229, 85, 109);
 }
 
 input[type="submit"].primary:active,
@@ -2628,7 +2628,7 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color: #ffbc58ce !important;
+  background-color: rgb(229, 85, 109) !important;
 }
 
 input[type="submit"].disabled,
@@ -3075,7 +3075,7 @@ button:disabled,
 .wrapper.style1 input[type="button"]:hover,
 .wrapper.style1 button:hover,
 .wrapper.style1 .button:hover {
-  background-color: #ffbc58ce;
+  background-color: rgb(229, 85, 109);
 }
 
 .wrapper.style1 input[type="submit"]:active,
@@ -3521,7 +3521,7 @@ button:disabled,
 }
 
 #menu ul > li > a:hover {
-  color: rgb(255, 153, 0);
+  color: rgb(229, 85, 109);
   text-decoration: none;
 }
 
@@ -3546,7 +3546,7 @@ button:disabled,
   width: 7em;
 }
 #menu.close:hover {
-  color: rgb(255, 153, 0);
+  color: rgb(229, 85, 109);
 }
 @media screen and (max-width: 736px) {
   #menu {
@@ -3604,10 +3604,11 @@ body.is-menu-visible #menu {
   height: inherit;
   line-height: inherit;
   font-weight: 100;
+  color: white;
 }
 
 #header h1 a:hover {
-  color: #ffbc58ce;
+  color: rgb(229, 85, 109);
 }
 
 @media screen and (max-width: 736px) {
@@ -3636,7 +3637,7 @@ body.is-menu-visible #menu {
   padding: 0;
 }
 a:hover {
-  color: #ffbc58ce;
+  color: rgb(229, 85, 109);
   text-decoration: none;
 }
 
@@ -3650,7 +3651,7 @@ a:hover {
   text-transform: uppercase;
 }
 #header nav > ul > li > a:hover {
-  color: #ffbc58ce;
+  color: rgb(229, 85, 109);
   text-decoration: none;
 }
 
@@ -3670,13 +3671,13 @@ a:hover {
   width: 2em;
 }
 #header nav > ul > li > a.menuToggle.background-image :hover {
-  color: #ffbc58ce;
+  color: rgb(229, 85, 109);
 }
 
 #header nav a:hover {
-  border-bottom-color: #ffbc58ce;
-  color: #ffbc58ce;
-  text-decoration-color: #ffbc58ce;
+  border-bottom-color: rgb(229, 85, 109);
+  color: rgb(229, 85, 109);
+  text-decoration-color: rgb(229, 85, 109);
 }
 
 @media screen and (max-width: 736px) {
@@ -4068,7 +4069,7 @@ body.is-mobile #main > header {
 }
 
 #footer .icons a:hover {
-  color: #ffbc58ce;
+  color: rgb(229, 85, 109);
 }
 
 #footer .copyright {

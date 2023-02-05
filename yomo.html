@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
-    <title>Elements - Spectral by HTML5 UP</title>
+    <style>
+      @media only screen and (max-width: 767px) {
+        header h2 {
+          font-size: 1em;
+        }
+        header p {
+          font-size: 1.2em;
+        }
+      }
+
+      .aptusnaslov a {
+        color: white;
+      }
+
+      .scrollable-images {
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+      .scrollable-images::-webkit-scrollbar {
+        width: 1px;
+        height: 6px;
+        background-color: #f5f5f5;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgb(229, 85, 109);
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .scrollable-images img {
+        height: 400px;
+        margin: 50px 0px 50px 0px;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+      }
+      .scrollable-images img.scrolling {
+        opacity: 0;
+        animation: fadeOut 0.2 ease-in-out forwards;
+      }
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+    <title>Aptus</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -22,18 +68,21 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header">
-        <h1><a href="index.html">Spectral</a></h1>
+        <h1 class="aptusnaslov"><a href="index.html">Yomo</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
-              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <a href="#menu" class="menuToggle"><span></span></a>
               <div id="menu">
                 <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="generic.html">Generic</a></li>
-                  <li><a href="elements.html">Elements</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">Log In</a></li>
+                  <li><a href="index.html">About</a></li>
+                  <li><a href="aptus.html">Aptus</a></li>
+                  <li><a href="yomo.html">Yomo</a></li>
+                  <li><a href="falconair.html">Falcon Air</a></li>
+                  <li><a href="cozylibrary.html">Cozy Library</a></li>
+                  <li><a href="absolutefit.html">Absolutefit</a></li>
+                  <li><a href="index.html">Contact</a></li>
                 </ul>
               </div>
             </li>
@@ -43,505 +92,132 @@
 
       <!-- Main -->
       <article id="main">
-        <header>
-          <h2>Elements</h2>
-          <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+        <header
+          style="
+            position: relative;
+            background-image: url(images/yomobanner.jpg);
+            background-size: cover;
+            scale: 100%;
+          "
+        >
+          <h2
+            style="
+              font-size: xxx-large;
+              text-align: center;
+              color: rgb(255, 157, 150);
+            "
+          >
+            YOMO
+          </h2>
+          <p
+            style="
+              font-size: xx-large;
+              text-align: center;
+              color: rgb(255, 157, 150);
+            "
+          >
+            Simple Taxi App
+          </p>
         </header>
+        <!-- 
+        <header style="position: relative; border: none; background-color:rgb(255, 142, 161)">
+          <img
+            src="images/aptusbanner.jpg"
+            style="width: 100%; height: 100%; max-width: 100%; max-height: 100%; border: none;"
+          />
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+            "
+          >
+            <h2 style="margin: 0">APTUS</h2>
+            <p style="margin: 0">Fitness App For Beginners</p>
+          </div>
+        </header>  -->
+
         <section class="wrapper style5">
           <div class="inner">
-            <section>
-              <h4>Text</h4>
-              <p>
-                This is <b>bold</b> and this is <strong>strong</strong>. This is
-                <i>italic</i> and this is <em>emphasized</em>. This is
-                <sup>superscript</sup> text and this is
-                <sub>subscript</sub> text. This is <u>underlined</u> and this is
-                code: <code>for (;;) { ... }</code>. Finally,
-                <a href="#">this is a link</a>.
-              </p>
-              <hr />
-              <header>
-                <h4>Heading with a Subtitle</h4>
-                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-              </header>
-              <p>
-                Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
-                odio porttitor sem non mi integer non faucibus ornare mi ut ante
-                amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
-                accumsan varius montes viverra nibh in adipiscing blandit tempus
-                accumsan.
-              </p>
-              <header>
-                <h5>Heading with a Subtitle</h5>
-                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-              </header>
-              <p>
-                Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
-                odio porttitor sem non mi integer non faucibus ornare mi ut ante
-                amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
-                accumsan varius montes viverra nibh in adipiscing blandit tempus
-                accumsan.
-              </p>
-              <hr />
-              <h2>Heading Level 2</h2>
-              <h3>Heading Level 3</h3>
-              <h4>Heading Level 4</h4>
-              <h5>Heading Level 5</h5>
-              <h6>Heading Level 6</h6>
-              <hr />
-              <h5>Blockquote</h5>
-              <blockquote>
-                Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt
-                felis sagittis eget tempus euismod. Vestibulum ante ipsum primis
-                in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum
-                primis in faucibus lorem ipsum dolor sit amet nullam adipiscing
-                eu felis.
-              </blockquote>
-              <h5>Preformatted</h5>
-              <pre><code>i = 0;
+            <h3>Role & Responsibilities</h3>
+            <p class="role">
+              Solo UI/UX Designer <br />
+              <br />
+              • Research <br />
+              • Prototyping <br />
+              • Usability Test <br />
+              • Visual Design
+            </p>
 
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
+            <hr />
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-            </section>
+            <h3>Overview</h3>
+            <p class="overview">
+              It's really hard for small cities to have a simple and reliable
+              way of transport without spending too much financial resources.
+              Yomo was created as a solution to this problem and it offers a
+              simple way of navigating through the city, doing good both for the
+              city and the users.
+            </p>
 
-            <section>
-              <h4>Lists</h4>
-              <div class="row">
-                <div class="col-6 col-12-medium">
-                  <h5>Unordered</h5>
-                  <ul>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Sagittis adipiscing.</li>
-                    <li>Felis enim feugiat.</li>
-                  </ul>
-                  <h5>Alternate</h5>
-                  <ul class="alt">
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Sagittis adipiscing.</li>
-                    <li>Felis enim feugiat.</li>
-                  </ul>
-                </div>
-                <div class="col-6 col-12-medium">
-                  <h5>Ordered</h5>
-                  <ol>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Etiam vel felis viverra.</li>
-                    <li>Felis enim feugiat.</li>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Etiam vel felis lorem.</li>
-                    <li>Felis enim et feugiat.</li>
-                  </ol>
-                  <h5>Icons</h5>
-                  <ul class="icons">
-                    <li>
-                      <a href="#" class="icon brands fa-twitter"
-                        ><span class="label">Twitter</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="icon brands fa-facebook-f"
-                        ><span class="label">Facebook</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="icon brands fa-instagram"
-                        ><span class="label">Instagram</span></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="icon brands fa-github"
-                        ><span class="label">Github</span></a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <h5>Actions</h5>
-              <div class="row">
-                <div class="col-6 col-12-medium">
-                  <ul class="actions">
-                    <li><a href="#" class="button primary">Default</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                  </ul>
-                  <ul class="actions small">
-                    <li><a href="#" class="button primary small">Small</a></li>
-                    <li><a href="#" class="button small">Small</a></li>
-                  </ul>
-                  <ul class="actions stacked">
-                    <li><a href="#" class="button primary">Default</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                  </ul>
-                  <ul class="actions stacked">
-                    <li><a href="#" class="button primary small">Small</a></li>
-                    <li><a href="#" class="button small">Small</a></li>
-                  </ul>
-                </div>
-                <div class="col-6 col-12-medium">
-                  <ul class="actions stacked">
-                    <li><a href="#" class="button primary fit">Default</a></li>
-                    <li><a href="#" class="button fit">Default</a></li>
-                  </ul>
-                  <ul class="actions stacked">
-                    <li>
-                      <a href="#" class="button primary small fit">Small</a>
-                    </li>
-                    <li><a href="#" class="button small fit">Small</a></li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+            <p>
+              It has two types of users:<br />
+              • Drivers who look for potential users who are looking for a
+              driver at the given moment. <br />
+              • Riders who look for currently available drivers. <br />
+              <br />
+              When driver leaves the rider at their targeted last stop, both of
+              them have the ability to rate their experience on each other,
+              making the app very user friendly.
+            </p>
 
-            <section>
-              <h4>Table</h4>
-              <h5>Default</h5>
-              <div class="table-wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Description</th>
-                      <th>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Item One</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Two</td>
-                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Three</td>
-                      <td>Morbi faucibus arcu accumsan lorem.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Four</td>
-                      <td>Vitae integer tempus condimentum.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Five</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="2"></td>
-                      <td>100.00</td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
+            <hr />
 
-              <h5>Alternate</h5>
-              <div class="table-wrapper">
-                <table class="alt">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Description</th>
-                      <th>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Item One</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Two</td>
-                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Three</td>
-                      <td>Morbi faucibus arcu accumsan lorem.</td>
-                      <td>29.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Four</td>
-                      <td>Vitae integer tempus condimentum.</td>
-                      <td>19.99</td>
-                    </tr>
-                    <tr>
-                      <td>Item Five</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="2"></td>
-                      <td>100.00</td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-            </section>
+            <h3>Context</h3>
+            <p>
+              This is my first project on a team. My job was to do research on
+              what is really needed in our local city and when it was later
+              decited to make a simple UI/UX prototype for the choosen app. This
+              was also my first time working in AdobeXD and getting fammiliar
+              with the abilities that the software has to offer.
+            </p>
 
-            <section>
-              <h4>Buttons</h4>
-              <ul class="actions">
-                <li><a href="#" class="button primary">Primary</a></li>
-                <li><a href="#" class="button">Default</a></li>
-              </ul>
-              <ul class="actions">
-                <li><a href="#" class="button large">Large</a></li>
-                <li><a href="#" class="button">Default</a></li>
-                <li><a href="#" class="button small">Small</a></li>
-              </ul>
-              <ul class="actions fit">
-                <li><a href="#" class="button fit">Fit</a></li>
-                <li><a href="#" class="button primary fit">Fit</a></li>
-                <li><a href="#" class="button fit">Fit</a></li>
-              </ul>
-              <ul class="actions fit small">
-                <li>
-                  <a href="#" class="button primary fit small">Fit + Small</a>
-                </li>
-                <li><a href="#" class="button fit small">Fit + Small</a></li>
-                <li>
-                  <a href="#" class="button primary fit small">Fit + Small</a>
-                </li>
-              </ul>
-              <ul class="actions">
-                <li>
-                  <a href="#" class="button primary icon solid fa-download"
-                    >Icon</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="button icon solid fa-download">Icon</a>
-                </li>
-              </ul>
-              <ul class="actions">
-                <li><span class="button primary disabled">Disabled</span></li>
-                <li><span class="button disabled">Disabled</span></li>
-              </ul>
-            </section>
+            <hr />
 
-            <section>
-              <h4>Form</h4>
-              <form method="post" action="#">
-                <div class="row gtr-uniform">
-                  <div class="col-6 col-12-xsmall">
-                    <input
-                      type="text"
-                      name="demo-name"
-                      id="demo-name"
-                      value=""
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div class="col-6 col-12-xsmall">
-                    <input
-                      type="email"
-                      name="demo-email"
-                      id="demo-email"
-                      value=""
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <select name="demo-category" id="demo-category">
-                      <option value="">- Category -</option>
-                      <option value="1">Manufacturing</option>
-                      <option value="1">Shipping</option>
-                      <option value="1">Administration</option>
-                      <option value="1">Human Resources</option>
-                    </select>
-                  </div>
-                  <div class="col-4 col-12-small">
-                    <input
-                      type="radio"
-                      id="demo-priority-low"
-                      name="demo-priority"
-                      checked
-                    />
-                    <label for="demo-priority-low">Low</label>
-                  </div>
-                  <div class="col-4 col-12-small">
-                    <input
-                      type="radio"
-                      id="demo-priority-normal"
-                      name="demo-priority"
-                    />
-                    <label for="demo-priority-normal">Normal</label>
-                  </div>
-                  <div class="col-4 col-12-small">
-                    <input
-                      type="radio"
-                      id="demo-priority-high"
-                      name="demo-priority"
-                    />
-                    <label for="demo-priority-high">High</label>
-                  </div>
-                  <div class="col-6 col-12-small">
-                    <input type="checkbox" id="demo-copy" name="demo-copy" />
-                    <label for="demo-copy">Email me a copy</label>
-                  </div>
-                  <div class="col-6 col-12-small">
-                    <input
-                      type="checkbox"
-                      id="demo-human"
-                      name="demo-human"
-                      checked
-                    />
-                    <label for="demo-human">Not a robot</label>
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name="demo-message"
-                      id="demo-message"
-                      placeholder="Enter your message"
-                      rows="6"
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <ul class="actions">
-                      <li>
-                        <input
-                          type="submit"
-                          value="Send Message"
-                          class="primary"
-                        />
-                      </li>
-                      <li><input type="reset" value="Reset" /></li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
-            </section>
+            <h3>Prototype</h3>
 
-            <section>
-              <h4>Image</h4>
-              <h5>Fit</h5>
-              <div class="box alt">
-                <div class="row gtr-50 gtr-uniform">
-                  <div class="col-12">
-                    <span class="image fit"
-                      ><img src="images/banner.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic01.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic02.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic03.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic03.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic02.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic01.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic02.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic01.jpg" alt=""
-                    /></span>
-                  </div>
-                  <div class="col-4">
-                    <span class="image fit"
-                      ><img src="images/pic03.jpg" alt=""
-                    /></span>
-                  </div>
-                </div>
-              </div>
-              <h5>Left &amp; Right</h5>
-              <p>
-                <span class="image left"
-                  ><img src="images/pic04.jpg" alt="" /></span
-                >Morbi mattis mi consectetur tortor elementum, varius
-                pellentesque velit convallis. Aenean tincidunt lectus auctor
-                mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex
-                et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur
-                nisi, id malesuada justo. Maecenas sagittis felis ac sagittis
-                semper. Curabitur purus leo, tempus sed finibus eget, fringilla
-                quis risus. Maecenas et lorem quis sem varius sagittis et a est.
-                Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt
-                bibendum. Interdum et malesuada fames ac ante ipsum primis in
-                faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer
-                eget ultricies odio. Nam vel ex a orci fringilla tincidunt.
-                Aliquam eleifend ligula non velit accumsan cursus. Etiam ut
-                gravida sapien. Morbi mattis mi consectetur tortor elementum,
-                varius pellentesque velit convallis. Aenean tincidunt lectus
-                auctor mauris maximus, ac scelerisque ipsum tempor. Duis
-                vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis
-                non efficitur nisi, id malesuada justo. Maecenas sagittis felis
-                ac sagittis semper. Curabitur purus leo, tempus sed finibus
-                eget, fringilla quis risus. Maecenas et lorem quis sem varius
-                sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor
-                at arcu tincidunt bibendum. Interdum et malesuada fames ac ante
-                ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque
-                ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla
-                tincidunt. Aliquam eleifend ligula non velit accumsan cursus.
-                Etiam ut gravida sapien.
-              </p>
-              <p>
-                <span class="image right"
-                  ><img src="images/pic05.jpg" alt="" /></span
-                >Vestibulum ultrices risus velit, sit amet blandit massa auctor
-                sit amet. Sed eu lectus sem. Phasellus in odio at ipsum
-                porttitor mollis id vel diam. Praesent sit amet posuere risus,
-                eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in,
-                auctor porta quam. Proin nec dui cursus, posuere dui eget
-                interdum. Fusce lectus magna, sagittis at facilisis vitae,
-                pellentesque at etiam. Quisque posuere leo quis sem commodo, vel
-                scelerisque nisi scelerisque. Suspendisse id quam vel tortor
-                tincidunt suscipit. Nullam auctor orci eu dolor consectetur,
-                interdum ullamcorper ante tincidunt. Mauris felis nec felis
-                elementum varius. Nam sapien ante, varius in pulvinar vitae,
-                rhoncus id massa. Donec varius ex in mauris ornare, eget euismod
-                urna egestas. Etiam lacinia tempor ipsum, sodales porttitor
-                justo. Aliquam dolor quam, semper in tortor eu, volutpat
-                efficitur quam. Fusce nec fermentum nisl. Aenean erat diam,
-                tempus aliquet erat. Etiam iaculis nulla ipsum, et pharetra
-                libero rhoncus ut. Phasellus rutrum cursus velit, eget
-                condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam
-                ante, vulputate et imperdiet eget, fermentum non dolor. Ut
-                eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus
-                justo. Duis neque ligula, elementum ut enim vel, posuere finibus
-                justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque
-                hendrerit in ipsum id tellus facilisis fermentum. Proin mauris
-                dui.
-              </p>
-            </section>
+            <div class="scrollable-images">
+              <img src="images/yomo1.jpg" alt="Image 1" />
+              <img src="images/yomo2.jpg" alt="Image 2" />
+              <img src="images/yomo3.jpg" alt="Image 3" />
+              <img src="images/yomo3.1.jpg" alt="Image 4" />
+              <img src="images/yomo4.jpg" alt="Image 5" />
+              <img src="images/yomo5.jpg" alt="Image 6" />
+              <img src="images/yomo6.jpg" alt="Image 7" />
+              <img src="images/yomo7.jpg" alt="Image 8" />
+              <img src="images/yomo8.jpg" alt="Image 9" />
+              <img src="images/yomo9.jpg" alt="Image 10" />
+              <img src="images/yomo10.jpg" alt="Image 10" />
+              <img src="images/yomo11.jpg" alt="Image 10" />
+              <img src="images/yomo12.jpg" alt="Image 10" />
+              <img src="images/yomo13.jpg" alt="Image 10" />
+            </div>
+
+            <br />
+            <br />
+            <hr />
+            <h3>Full App:</h3>
+            <p>
+              You can find the full app including documentation and user flow
+              diagrams on this link:
+              <a
+                class="link"
+                href="https://github.com/huzbasicamila/Taxi-aplikacija"
+                >Yomo</a
+              >
+            </p>
           </div>
         </section>
       </article>
@@ -549,35 +225,42 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       <!-- Footer -->
       <footer id="footer">
         <ul class="icons">
+          <p>
+            <br />
+            FEEL FREE TO CONTACT ME, I WILL ANSWER AS SOON AS POSSIBLE<br />
+            <br />
+          </p>
           <li>
-            <a href="#" class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
+            <a
+              href="https://www.linkedin.com/in/ismail-ganibegovi%C4%87/"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
+            <a
+              href="https://github.com/GanibegovicIsmail"
+              class="icon brands fa-github"
+              ><span class="label">Github</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-instagram"
+            <a
+              href="https://www.instagram.com/ganibegovicismail/"
+              class="icon brands fa-instagram"
               ><span class="label">Instagram</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-dribbble"
-              ><span class="label">Dribbble</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
+            <a
+              href="https://www.facebook.com/hemuli.7/"
+              class="icon brands fa-facebook"
+              ><span class="label">Facebook</span></a
             >
           </li>
         </ul>
         <ul class="copyright">
-          <li>&copy; Untitled</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          <li>&copy; Ismail Ganibegovic</li>
         </ul>
       </footer>
     </div>

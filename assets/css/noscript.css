@@ -1,6 +1,4 @@
-/* Banner */
-
-body.is-preload #banner h2 {
+Banner body.is-preload #banner h2 {
   -moz-transform: none;
   -webkit-transform: none;
   -ms-transform: none;
