@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      .scrollable-images {
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+      .scrollable-images::-webkit-scrollbar {
+        width: 5px;
+        background-color: #f5f5f5;
+      }
+      .scrollable-images::-webkit-scrollbar-thumb {
+        background-color: #000000;
+      }
+      .scrollable-images img {
+        height: 400px;
+        margin: 50px 0px 50px 0px;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+      }
+      .scrollable-images img.scrolling {
+        opacity: 0;
+        animation: fadeOut 0.2 ease-in-out forwards;
+      }
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
     <title>Aptus</title>
     <meta charset="utf-8" />
     <meta
@@ -21,7 +53,7 @@
         <nav id="nav">
           <ul>
             <li class="special">
-              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <a href="#menu" class="menuToggle"><span></span></a>
               <div id="menu">
                 <ul>
                   <li><a href="index.html">Home</a></li>
@@ -56,6 +88,8 @@
               • Visual Design
             </p>
 
+            <hr />
+
             <h3>Overview</h3>
             <p class="overview">
               With so many different rules depending on what you find or
@@ -66,33 +100,39 @@
             </p>
 
             <p>
-              Main functionalities: an intuitive fitness app that depening on
-              the user's entry information gives correct feedback and advice for
-              improving that individual's fitness capabilities.
+              It has two key functionalities: Giving users feedback and advice
+              depening on the calculated user's BMI. Has the ability of gender
+              selection and based on that features different styles of workout.
             </p>
 
             <hr />
 
-            <h4>Feugiat aliquam</h4>
+            <h3>Context</h3>
             <p>
-              Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec
-              varius ex in mauris ornare, eget euismod urna egestas. Etiam
-              lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam,
-              semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum
-              nisl. Aenean erat diam, tempus aliquet erat.
+              Aptus is a simple fitness app that I developet, from conception to
+              execution, for a college project. It was mainly designed to be
+              simple and likeable by beginners who are this app's targeted
+              audience.
             </p>
 
-            <p>
-              Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut.
-              Phasellus rutrum cursus velit, eget condimentum nunc blandit vel.
-              In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet
-              eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed
-              viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum
-              ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh
-              quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis
-              fermentum. Proin mauris dui, at vestibulum sit amet, auctor
-              bibendum neque.
-            </p>
+            <hr />
+
+            <h3>Prototype</h3>
+
+            <div class="scrollable-images">
+              <img src="images/aptus1.jpg" alt="Image 1" />
+              <img src="images/aptus2.jpg" alt="Image 2" />
+              <img src="images/aptus3.jpg" alt="Image 3" />
+              <img src="images/aptus4.jpg" alt="Image 4" />
+              <img src="images/aptus5.jpg" alt="Image 5" />
+              <img src="images/aptus6.jpg" alt="Image 6" />
+              <img src="images/aptus7.jpg" alt="Image 7" />
+              <img src="images/aptus8.jpg" alt="Image 8" />
+              <img src="images/aptus9.jpg" alt="Image 9" />
+              <img src="images/aptus10.jpg" alt="Image 10" />
+              <img src="images/aptus11.jpg" alt="Image 10" />
+              <img src="images/aptus12.jpg" alt="Image 10" />
+            </div>
           </div>
         </section>
       </article>
