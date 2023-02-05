@@ -277,6 +277,10 @@ p {
   opacity: 80%;
 }
 
+p.role {
+  font-weight: 500;
+}
+
 h1,
 h2,
 h3,
@@ -4064,7 +4068,7 @@ body.is-mobile #main > header {
 }
 
 #footer .icons a:hover {
-  color: #ff9900;
+  color: #ffbc58ce;
 }
 
 #footer .copyright {
